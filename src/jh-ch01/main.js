@@ -19,9 +19,9 @@ console.log('명령형 프로그래밍 평균점수: ', averageFunc(input));
 const sum = (a, b) => a + b;
 const total = arr => arr.reduce(sum);
 const size = arr => arr.length;
-const device = (a, b) => a / b;
-const main = arr => device(total(arr), size(arr));
-console.log('함수형 프로그래밍 평균점수:', main(input));
+const division = (a, b) => a / b;
+const getAverage = arr => division(total(arr), size(arr));
+console.log('함수형 프로그래밍 평균점수:', getAverage(input));
 
 
 // 문제2. 복수 과목을 수강한 학생의 평균 구하기
